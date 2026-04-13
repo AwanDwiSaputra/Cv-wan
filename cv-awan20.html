@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Formal - Awan Dwi Saputro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #1a2a6c;
+            --text-color: #333;
+            --light-grey: #f4f4f4;
+            --border-color: #ddd;
+            --secondary-text: #666;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e9ebee;
+            color: var(--text-color);
+            line-height: 1.5;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .cv-container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 50px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-top: 10px solid var(--primary-color);
+        }
+
+        /* Header Layout dengan Foto */
+        .header-flex {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            border-bottom: 2px solid var(--light-grey);
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+        }
+
+        .profile-photo {
+            width: 140px;
+            height: 140px;
+            border-radius: 6px;
+            object-fit: cover;
+            border: 1px solid var(--border-color);
+            background-color: #eee;
+        }
+
+        .header-text h1 {
+            margin: 0;
+            color: var(--primary-color);
+            font-size: 2.2rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .tagline {
+            font-weight: 600;
+            color: var(--secondary-text);
+            margin: 5px 0 15px 0;
+            font-size: 1.1rem;
+        }
+
+        .contact-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px 20px;
+            font-size: 0.85rem;
+        }
+
+        .contact-info span {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .contact-info i {
+            color: var(--primary-color);
+            width: 14px;
+        }
+
+        /* Section Styling */
+        section {
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            border-bottom: 2px solid var(--primary-color);
+            color: var(--primary-color);
+            font-size: 1.1rem;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .content-card {
+            margin-bottom: 15px;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            color: #000;
+        }
+
+        .sub-header {
+            color: var(--secondary-text);
+            font-style: italic;
+            font-size: 0.9rem;
+            margin-bottom: 5px;
+        }
+
+        p, ul {
+            margin: 5px 0;
+            font-size: 0.95rem;
+            text-align: justify;
+        }
+
+        ul {
+            padding-left: 18px;
+        }
+
+        /* Skill Badges */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .skill-badge {
+            background: var(--light-grey);
+            border: 1px solid var(--border-color);
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        /* Education Layout */
+        .education-item {
+            margin-bottom: 12px;
+        }
+
+        /* Footer */
+        .footer-note {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 0.75rem;
+            color: #999;
+            border-top: 1px solid var(--light-grey);
+            padding-top: 10px;
+        }
+
+        /* Print Settings */
+        @media print {
+            body { background: white; padding: 0; }
+            .cv-container { box-shadow: none; max-width: 100%; padding: 30px; }
+        }
+
+        @media (max-width: 650px) {
+            .header-flex { flex-direction: column; text-align: center; }
+            .contact-info { grid-template-columns: 1fr; text-align: left; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cv-container">
+        <header class="header-flex">
+            <img src="ddd.JPG" alt="Foto Awan Dwi Saputro" class="profile-photo">
+            
+            <div class="header-text">
+                <h1>Awan Dwi Saputro</h1>
+                <div class="tagline">Junior Web Developer | Siswa RPL</div>
+                
+                <div class="contact-info">
+                    <span><i class="fas fa-map-marker-alt"></i> Kadikoro, Klatak DK.IV, Bantul</span>
+                    <span><i class="fas fa-phone"></i> +62 859123109101</span>
+                    <span><i class="fas fa-envelope"></i> dwiawansaputro@gmail.com</span>
+                    <span><i class="fas fa-user"></i> Islam</span>
+                </div>
+            </div>
+        </header>
+
+        <section>
+            <h2><i class="fas fa-user-tie"></i> Profil Profesional</h2>
+            <p>
+                Saya adalah siswa jurusan Rekayasa Perangkat Lunak (RPL) di SMK Negeri 1 Sanden yang memiliki dedikasi tinggi dalam dunia pemrograman. Fokus saya adalah membangun aplikasi web yang efisien dengan mengombinasikan logika algoritma yang presisi serta kreativitas digital. Saya terbiasa bekerja dengan teknologi modern seperti JavaScript dan PHP Laravel.
+            </p>
+        </section>
+
+        <section>
+            <h2><i class="fas fa-laptop-code"></i> Keahlian Teknis</h2>
+            <div class="skills-container">
+                <span class="skill-badge">JavaScript (ES6+)</span>
+                <span class="skill-badge">PHP Laravel</span>
+                <span class="skill-badge">React.js</span>
+                <span class="skill-badge">SQL Database (MySQL)</span>
+                <span class="skill-badge">Git Version Control</span>
+                <span class="skill-badge">RESTful API</span>
+                <span class="skill-badge">System Analysis</span>
+            </div>
+        </section>
+
+        <section>
+            <h2><i class="fas fa-briefcase"></i> Pengalaman & Proyek</h2>
+            
+            <div class="content-card">
+                <div class="job-header">
+                    <span>Web Cashier System (Sistem Kasir Web)</span>
+                    <span>Proyek Mandiri</span>
+                </div>
+                <div class="sub-header">Lead Developer | PHP & MySQL</div>
+                <ul>
+                    <li>Merancang dan membangun sistem transaksi kasir berbasis web dari awal.</li>
+                    <li>Mengimplementasikan fitur manajemen stok barang dan pembuatan laporan penjualan otomatis.</li>
+                    <li>Memastikan antarmuka pengguna (UI) responsif dan mudah digunakan.</li>
+                </ul>
+            </div>
+
+            <div class="content-card">
+                <div class="job-header">
+                    <span>Praktikum Rekayasa Perangkat Lunak</span>
+                    <span>SMK N 1 Sanden</span>
+                </div>
+                <div class="sub-header">Siswa Praktikan</div>
+                <ul>
+                    <li>Aktif dalam pengembangan aplikasi internal sekolah sebagai bagian dari kurikulum industri.</li>
+                    <li>Mempelajari manajemen basis data skala menengah dan integrasi API.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2><i class="fas fa-graduation-cap"></i> Pendidikan</h2>
+            
+            <div class="education-item">
+                <div class="job-header">
+                    <span>SMK Negeri 1 Sanden</span>
+                    <span>2024 — Sekarang</span>
+                </div>
+                <div class="sub-header">Rekayasa Perangkat Lunak (RPL)</div>
+            </div>
+
+            <div class="education-item">
+                <div class="job-header">
+                    <span>SMP Negeri 2 Sanden</span>
+                    <span>2021 — 2024</span>
+                </div>
+                <div class="sub-header">Lulus</div>
+            </div>
+
+            <div class="education-item">
+                <div class="job-header">
+                    <span>SD Negeri Dayu</span>
+                    <span>2015 — 2021</span>
+                </div>
+                <div class="sub-header">Lulus</div>
+            </div>
+        </section>
+
+        <section>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
+                <div>
+                    <h2><i class="fas fa-language"></i> Bahasa</h2>
+                    <ul>
+                        <li>Bahasa Indonesia (Native/Aktif)</li>
+                        <li>Bahasa Inggris (Teknis/Pasif)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2><i class="fas fa-lightbulb"></i> Soft Skills</h2>
+                    <ul>
+                        <li>Problem Solving & Logika Kuat</li>
+                        <li>Analisis Sistem</li>
+                        <li>Kerjasama Tim & Komunikasi</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="footer-note">
+            Dokumen ini dibuat secara digital dan benar adanya. &copy; 2026 Awan Dwi Saputro
+        </div>
+    </div>
+
+</body>
+</html>
